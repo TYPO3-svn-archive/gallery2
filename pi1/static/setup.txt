@@ -1,0 +1,15 @@
+plugin.tx_gallery2_pi1 {
+	view = gallery
+	showItem = 0
+	galleryPage =
+
+	count = 3
+	show = title
+	maxSize =
+	fails = 5
+	dontlink = 0
+
+	randomAlbumLink = 0
+	showAjaxTitle = 0
+	showAjaxDescription = 0
+}

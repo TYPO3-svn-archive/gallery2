@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<T3DataStructure>
+	<sheets>
+		<sDEF>
+			<ROOT>
+				<TCEforms>
+					<sheetTitle>LLL:EXT:gallery2/locallang_db.xml:tt_content.list_type_pi1</sheetTitle>
+				</TCEforms>
+				<type>array</type>
+				<el>
+					<view>
+						<TCEforms>
+							<label>LLL:EXT:gallery2/locallang_db.xml:tx_gallery2.view</label>
+							<config>
+								<type>select</type>
+								<items type="array">
+									<numIndex index="0" type="array">
+										<numIndex index="0">LLL:EXT:gallery2/locallang_db.xml:tx_gallery2.view.0</numIndex>
+										<numIndex index="1">gallery</numIndex>
+									</numIndex>
+									<numIndex index="1" type="array">
+										<numIndex index="0">LLL:EXT:gallery2/locallang_db.xml:tx_gallery2.view.1</numIndex>
+										<numIndex index="1">randomAlbum</numIndex>
+									</numIndex>
+									<numIndex index="2" type="array">
+										<numIndex index="0">LLL:EXT:gallery2/locallang_db.xml:tx_gallery2.view.2</numIndex>
+										<numIndex index="1">randomImage</numIndex>
+									</numIndex>
+									<numIndex index="3" type="array">
+										<numIndex index="0">LLL:EXT:gallery2/locallang_db.xml:tx_gallery2.view.3</numIndex>
+										<numIndex index="1">recentAlbum</numIndex>
+									</numIndex>
+									<numIndex index="4" type="array">
+										<numIndex index="0">LLL:EXT:gallery2/locallang_db.xml:tx_gallery2.view.4</numIndex>
+										<numIndex index="1">recentImage</numIndex>
+									</numIndex>
+									<numIndex index="5" type="array">
+										<numIndex index="0">LLL:EXT:gallery2/locallang_db.xml:tx_gallery2.view.5</numIndex>
+										<numIndex index="1">recentAlbumsSelf</numIndex>
+									</numIndex>
+									<numIndex index="6" type="array">
+										<numIndex index="0">LLL:EXT:gallery2/locallang_db.xml:tx_gallery2.view.6</numIndex>
+										<numIndex index="1">ajaxGallery</numIndex>
+									</numIndex>
+									<numIndex index="7" type="array">
+										<numIndex index="0">LLL:EXT:gallery2/locallang_db.xml:tx_gallery2.view.7</numIndex>
+										<numIndex index="1">ajaxSingleview</numIndex>
+									</numIndex>
+								</items>
+								<maxitems>1</maxitems>
+								<size>1</size>
+							</config>
+						</TCEforms>
+					</view>
+					<showItem>
+						<TCEforms>
+							<label>LLL:EXT:gallery2/locallang_db.xml:tx_gallery2.showItem</label>
+							<config>
+								<type>select</type>
+								<form_type>user</form_type>
+								<userFunc>tx_gallery2_albumview->displayAlbumTree</userFunc>
+							</config>
+						</TCEforms>
+					</showItem>
+					<count>
+						<TCEforms>
+							<label>LLL:EXT:gallery2/locallang_db.xml:tx_gallery2.count</label>
+							<config>
+								<type>input</type>
+								<eval>int</eval>
+								<max>4</max>
+								<size>4</size>
+							</config>
+						</TCEforms>
+					</count>
+				</el>
+			</ROOT>
+		</sDEF>
+	</sheets>
+</T3DataStructure>

@@ -1,0 +1,193 @@
+08-08-27 0.0.39 Philipp (pmueller@juhui.ch)
+	* open backlink in the same window: target="_self"
+
+08-04-02 0.0.38 Philipp (pmueller@juhui.ch)
+	* Bugfix in Ajax-Gallery display
+
+08-04-01 0.0.37 Philipp (pmueller@juhui.ch)
+	* Now you can display the image-description in AjaxSingleView
+		* To use the title, enable the typoscript-variable "showAjaxDescription"
+
+08-03-10 0.0.36 Philipp (pmueller@juhui.ch)
+	* AddOn: Now you can disable the Gallery2-CSS-Header in install-conf
+
+08-03-10 0.0.35 Philipp (pmueller@juhui.ch)
+	* Bugfix: TYPO3 4.1 support!
+
+08-02-29 0.0.34 Philipp (pmueller@juhui.ch)
+	* Now you can display the image-title in AjaxSingleView
+		* To use the title, enable the typoscript-variable "showAjaxTitle"
+
+08-02-22 0.0.33 Philipp (pmueller@juhui.ch)
+	* Bugfix: fixed SingleView in AJAX-Gallery
+
+08-01-25 0.0.32 Philipp (pmueller@juhui.ch)
+	* Bugfix: Addon of Version 0.0.31 worked only with SimulateStatic, now it work without simulateStatic too
+
+08-01-16 0.0.31 Philipp (pmueller@juhui.ch)
+	* Supportes password-elements and frontendlogin (not with feuser-sync)
+
+07-09-17 0.0.30 Philipp (pmueller@juhui.ch)
+	* Added non-simulateStaticDocuments-Supporting
+	* Extended "known-problems"-List in Documentation
+
+07-09-07 0.0.29 Philipp (pmueller@juhui.ch)
+	* AddOn: Now you can link a random image with the parent album of it (typoscript: randomAlbumLink)
+		* Attention: This function runs only when "dontlink" is deactivated!
+
+07-09-07 0.0.28 Philipp (pmueller@juhui.ch)
+	* Changed image-size in AJAX-Singleview
+	* Use scaled images from gallery2 in AJAX-Singleview
+
+07-09-07 0.0.27 Philipp (pmueller@juhui.ch)
+	* Bugfix: MoreRandoms-function was corrupt, when not enough images are available to display
+	* Removed BACK_PATH-Variable in pi1, it is not required
+
+07-09-06 0.0.26 Philipp (pmueller@juhui.ch)
+	* Updated Documentation
+	* Updated Code-Comments
+	* Bugfix: Now the Gallery2-Extension supportes different databases for Gallery2 and TYPO3 (localconf.php (TYPO3) and config.php (Gallery2) needed)
+	* Added: AJAX-View to display "Resized Pictures" on the same page like the preview-pictures
+
+07-08-27 0.0.25 Philipp (pmueller@juhui.ch)
+	* Added availability for more then one random images (albums)
+	* Fixed charset-bug in albumselector (backend: flexform)
+	* Fixed locallang-bug (the value "Neuste Bilder" was "Zufällige Bilder")
+	* Added "dontlink"-option, on random views
+	* Cleaned code in pi1
+	* updated comments in pi1
+	* Updated documentation
+
+07-07-13 0.0.24 Philipp (pmueller@juhui.ch)
+	* The pictures in the RecentAlbumsSelf-Function are now linked to the album, no more to the image directly.
+	* Updated documentation
+
+07-05-07 0.0.23 Philipp (pmueller@juhui.ch)
+	* Fixed Charset-Bug on RecentAlbumsSelf-Function
+
+07-05-03 0.0.22 Philipp (pmueller@juhui.ch)
+	* Set a session, when using a backlink
+
+07-01-30 0.0.21 Philipp (pmueller@juhui.ch)
+	* Bugfix for Ecard module (thanks to mindless):
+		* http://gallery.menalto.com/node/36557?page=4#comment-217513
+	* Bugfix in API: 3 obsolete require_once-functions removed
+		* for using with multisite (don't tested) (thanks to pingus)
+	* Set the standard-value of "g2mainMod" to "user" (downward compatibility)
+	* Changed all locallang-files to xml
+	* Removed obsolete files
+	* Updated the documentation
+	* The setup-conf "galleryPage" must be an integer!
+
+07-01-29 0.0.20 Philipp (pmueller@juhui.ch)
+	* now can be configured a main-module (parent-module) for g2 "g2mainMod = web"
+	* Removed function getRandomImagesOfRecentAlbum() and getRandomAll()
+		* has used to much server-resources
+		* the gallery extension can now display only ONE random Block!!
+
+	* Added function getRecentAlbumsSelf()
+		* display a random picture of the last $conf['countSelf'] albums (experemental)
+		* works only when:
+			* the g2-database are the same as the typo3-database
+			* the table-prefix is g2_
+			* the field-prefix is g_
+			* no showItem is given
+		* used a regex-command to set the correct url!!
+	* removed setup-configuration: nocss, failures
+	* changed standard setup-configuration "view = gallery"
+	* changed standard setup-configuration "show = "
+	* Bugfix: link-generation fixed
+
+07-01-19 0.0.19 Philipp (pmueller@juhui.ch)
+	* changed the main-module to txjuhuinewsM1
+
+06-12-23 0.0.18 Philipp (pmueller@juhui.ch)
+	* UTF-8-Bug fixed
+
+06-11-23 0.0.17 Philipp (pmueller@juhui.ch)
+	* Backend-Module supportes a backlink-function
+
+06-10-05 0.0.16 Philipp (pmueller@juhui.ch)
+	* Backend-Module: CSS fix (changed the height of an element to 350px)
+
+06-10-05 0.0.15 Philipp (pmueller@juhui.ch)
+	* FE-Editing can now be enabled or disabled! (Standard: disabled)
+	* Bugfix: Fixed the upload-module in be (thanks to nicame)
+
+06-10-04 0.0.14 Philipp (pmueller@juhui.ch)
+	* Bugfixes: Don't perform the foreach-command, if an array is empty
+
+06-08-23 0.0.13 Philipp (pmueller@juhui.ch)
+	* Documentation updated
+	* random and recent albums/images would be linked to gallery2 (configure in typoscript)
+	* Bugfix: deleteAlbum()-function is stable
+	* PI1 extended:
+		* display random images of recent album (quantity-configuration)
+	* Extended FlexForm-Configuration with field "count"
+
+06-08-22 0.0.12 Philipp (pmueller@juhui.ch)
+	* Updated README.txt
+	* Use the TYPO3-Function for _GET
+	* PI1 extended:
+		* display random albums/images (quantity-configuration)
+		* display recent albums/images
+		* Working with the API-Class
+	* PI2 and PI3 deleted (obsolete)
+	* BE-Module: Working with API-Class
+
+06-08-17 0.0.11 Philipp (pmueller@juhui.ch)
+	* Backlink-function for G2-View in FE (only for local domain available)
+		* you can set a url-var (?tx_gallery2_pi1[backlink]=linktobackurl) and the backlink adds after the gallery
+	* CSS-Definition for nice display of albums and images in Backend (width and height for album.tpl)
+
+06-08-15 0.0.10 Philipp (pmueller@juhui.ch)
+	* Add an API-File with global functions
+	* Add an embed-file for integrating the gallery2-extension in other extensions
+		* Support functions for:
+			* upload files (upload-applet in separate window)
+			* display an album
+			* login / logout / checklogin
+	* Securefix: The first created user must be added manually to the admin-group of G2
+	* Bugfix: Session-problem because a bug in the upload-applet of G2 is fixed
+		* Create dummy-files in domain.ch/com/... (see lib/class.tx_gallery2_api.php -> makeDummyFiles())
+	* Bugfix: POST-Problem in Backend is fixed
+
+06-08-05 0.0.9 Philipp (pmueller@juhui.ch)
+	* Bugfix: Gallery-Selection for BE-User is fixed
+
+06-08-03 0.0.8 Philipp (pmueller@juhui.ch)
+	* New configuration: nocss (can disable css from G2)
+	* Added User- and Page-TSConfig to the userFunc
+		* Now is it possible to configure a parent-album for the album-selection
+
+06-07-28 0.0.7 Philipp (pmueller@juhui.ch)
+	* Begin Documentation
+	* Write TODO.txt
+	* Edit README.txt
+	* Gallery-Album selection in BackEnd
+		* FlexForm with a userFunc => tx_gallery2_albumview->displayAlbumTree
+	* Fewer configurations
+		* Only g2RelPath is required to set (def: gallery2)
+	* Admin-Users of TYPO3 will automatic add to Admin-Group of G2
+	* Icons => transparent background
+	* Easy integration of FE-Plugin on a page
+	* added icons
+
+06-07-22 0.0.6 Marcel (typo3@gmuer.org)
+	* new ext-conf: g2RelPath (default: gallery2)
+
+06-07-21 0.0.5 Marcel (typo3@gmuer.org)
+	* Fix: paths
+	* no german comments anymore
+
+06-07-20 0.0.4 Marcel (typo3@gmuer.org)
+	* Link to thread
+
+06-07-19 0.0.3 Marcel (typo3@gmuer.org)
+	* initial upload to TER
+
+06-06-20 0.0.2 Marcel (typo3@gmuer.org)
+	* CSS-fix: DocType = xhtml_trans
+
+06-05-26 0.0.1 Marcel (typo3@gmuer.org)
+	* initial upload

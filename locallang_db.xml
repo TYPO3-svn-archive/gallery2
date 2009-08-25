@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+	<meta type="array">
+		<type>database</type>
+		<description>Language labels for database tables/fields belonging to extension 'gallery2'</description>
+	</meta>
+	<data type="array">
+		<languageKey index="default" type="array">
+			<label index="tt_content.list_type_pi1">Gallery2</label>
+			<label index="tx_gallery2.showItem">album selection:</label>
+			<label index="tx_gallery2.view">Display:</label>
+			<label index="tx_gallery2.view.0">Gallery</label>
+			<label index="tx_gallery2.view.1">Random Albums</label>
+			<label index="tx_gallery2.view.2">Random Images</label>
+			<label index="tx_gallery2.view.3">Recent Albums</label>
+			<label index="tx_gallery2.view.4">Recent Images</label>
+			<label index="tx_gallery2.view.5">Random Images of recent Albums</label>
+			<label index="tx_gallery2.view.6">AJAX-Gallery</label>
+			<label index="tx_gallery2.view.7">AJAX-Gallery (SingleView)</label>
+			<label index="tx_gallery2.count">Quantity to display</label>
+		</languageKey>
+		<languageKey index="de" type="array">
+			<label index="tt_content.list_type_pi1">Gallery2</label>
+			<label index="tx_gallery2.showItem">Albumauswahl:</label>
+			<label index="tx_gallery2.view">Anzeigen:</label>
+			<label index="tx_gallery2.view.0">Galerie</label>
+			<label index="tx_gallery2.view.1">Zufällige Alben</label>
+			<label index="tx_gallery2.view.2">Zufällige Bilder</label>
+			<label index="tx_gallery2.view.3">Neuste Alben</label>
+			<label index="tx_gallery2.view.4">Neuste Bilder</label>
+			<label index="tx_gallery2.view.5">Zufällige Bilder der neusten Alben</label>
+			<label index="tx_gallery2.view.6">AJAX-Galerie</label>
+			<label index="tx_gallery2.view.7">AJAX-Galerie (Einzelansicht)</label>
+			<label index="tx_gallery2.count">Anzahl Einträge:</label>
+		</languageKey>
+	</data>
+</T3locallang>

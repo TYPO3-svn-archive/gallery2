@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+	<meta type="array">
+		<description>Language labels for extension 'gallery2'</description>
+	</meta>
+	<data type="array">
+		<languageKey index="default" type="array">
+			<label index="pi1_title">gallery-album</label>
+			<label index="pi1_plus_wiz_description">Add an album of the gallery on the site.</label>
+		</languageKey>
+		<languageKey index="de" type="array">
+			<label index="pi1_title">Gallery Album</label>
+			<label index="pi1_plus_wiz_description">Fügt ein Album der Galerie auf die Seite ein.</label>
+		</languageKey>
+	</data>
+</T3locallang>

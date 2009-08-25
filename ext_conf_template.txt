@@ -1,0 +1,17 @@
+# ***************************************************************************************
+# Extension configuration variables for Gallery2
+#
+# ***************************************************************************************
+#
+# most should be taken from TYPO3 directly, but didn't know how at this moment.... ;-)
+#
+#########################################################################################
+
+  # cat=basic/path; type=string; label=relative Path to G2 from TYPO3-Root
+g2RelPath = gallery2
+
+  # cat=basic/func; type=string; label=Parent Module of gallery2
+g2mainMod = user
+
+  # cat=basic/func; type=boolean; label=Don't include Gallery2-CSS
+dontIncludeCSS = 0
