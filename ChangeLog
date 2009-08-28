@@ -1,3 +1,6 @@
+08-08-27 Philipp (pmueller@juhui.ch)
+	* added xclasses and fixed ext_emconf.php
+
 08-08-27 0.0.39 Philipp (pmueller@juhui.ch)
 	* open backlink in the same window: target="_self"
 
