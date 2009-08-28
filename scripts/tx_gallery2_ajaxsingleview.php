@@ -133,6 +133,10 @@ $object->init(intval($_GET['g2_itemId']));
 $object->main();
 $object->printContent();
 
+if (defined('TYPO3_MODE') && $TYPO3_CONF_VARS[TYPO3_MODE]['XCLASS']['ext/gallery2/scripts/tx_gallery2_ajaxsingleview.php'])    {
+	include_once($TYPO3_CONF_VARS[TYPO3_MODE]['XCLASS']['ext/gallery2/scripts/tx_gallery2_ajaxsingleview.php']);
+}
+
 // remove access-variables
 unset($typo_db_host,$typo_db_username,$typo_db_password,$typo_db,$storeConfig);
 ?>

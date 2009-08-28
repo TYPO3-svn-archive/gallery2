@@ -151,8 +151,7 @@ class tx_gallery2_albumview {
 	}
 }
 
-
-if (defined('TYPO3_MODE') && $TYPO3_CONF_VARS['TYPO3_MODE']['XCLASS']['ext/gallery2/class.tx_gallery2_albumview.php'])    {
-    include_once($TYPO3_CONF_VARS['TYPO3_MODE']['XCLASS']['ext/gallery2/class.tx_gallery2_albumview.php']);
+if (defined('TYPO3_MODE') && $TYPO3_CONF_VARS[TYPO3_MODE]['XCLASS']['ext/gallery2/class.tx_gallery2_albumview.php'])    {
+    include_once($TYPO3_CONF_VARS[TYPO3_MODE]['XCLASS']['ext/gallery2/class.tx_gallery2_albumview.php']);
 }
 ?>

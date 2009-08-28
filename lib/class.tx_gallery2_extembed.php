@@ -442,7 +442,7 @@ class tx_gallery2_extembed extends tx_gallery2_api {
 }
 
 
-if (defined('TYPO3_MODE') && $TYPO3_CONF_VARS['TYPO3_MODE']['XCLASS']['ext/gallery2/lib/class.tx_gallery2_extembed.php'])    {
-    include_once($TYPO3_CONF_VARS['TYPO3_MODE']['XCLASS']['ext/gallery2/lib/class.tx_gallery2_extembed.php']);
+if (defined('TYPO3_MODE') && $TYPO3_CONF_VARS[TYPO3_MODE]['XCLASS']['ext/gallery2/lib/class.tx_gallery2_extembed.php'])    {
+    include_once($TYPO3_CONF_VARS[TYPO3_MODE]['XCLASS']['ext/gallery2/lib/class.tx_gallery2_extembed.php']);
 }
 ?>
