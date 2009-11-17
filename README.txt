@@ -1,10 +1,11 @@
 /**
  * Autor: Philipp Müller <pmueller@juhui.ch>
- * Company: Jud Grafik+Internet, www.juhui.ch
+ * Company: Jud Informatik+Grafik GmbH, www.juhui.ch
  */
 
-Online:
-Visit the Forum: http://gallery.menalto.com/node/51887
+Links:
+- http://forge.typo3.org/repositories/browse/extension-gallery2/
+- http://typo3.org/extensions/repository/view/gallery2/current/
 
 Installation:
 - For installation- and configuration-help please read the documentation.
