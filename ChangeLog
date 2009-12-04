@@ -1,6 +1,12 @@
+<<<<<<< .mine
+09-12-02 Philipp (pmueller@juhui.ch)
+	* added "ext_tables.sql"
+
+=======
 09-11-17 Philipp (pmueller@juhui.ch)
 	* updated readme
 	
+>>>>>>> .r27324
 08-08-27 Philipp (pmueller@juhui.ch)
 	* added xclasses and fixed ext_emconf.php
 
