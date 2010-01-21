@@ -1,5 +1,5 @@
 /**
- * Autor: Philipp Müller <pmueller@juhui.ch>
+ * Autor: Philipp MÃ¼ller <pmueller@juhui.ch>
  * Company: Jud Informatik+Grafik GmbH, www.juhui.ch
  */
 
