@@ -2,10 +2,10 @@
 /***************************************************************
 *  Copyright notice
 *
-*  (c) 2006 Philipp Müller <pmueller@juhui.ch>
+*  (c) 2010 Philipp Mueller <philipp.mueller@xeiro.ch>
 *  All rights reserved
 *
-*  This script is part of the TYPO3 project. The TYPO3 project is
+*  This script is part of the Typo3 project. The Typo3 project is
 *  free software; you can redistribute it and/or modify
 *  it under the terms of the GNU General Public License as published by
 *  the Free Software Foundation; either version 2 of the License, or
@@ -24,8 +24,7 @@
 /**
  * Module 'Gallery2' for the 'gallery2' extension.
  *
- * @author	Philipp Mueller <pmueller@juhui.ch>
- * @company Jud Grafik+Internet, www.juhui.ch
+ * @author	Philipp Mueller <philipp.mueller@xeiro.ch>
  * @package TYPO3
  * @subpackage gallery2
  */
@@ -34,21 +33,24 @@
  *
  *
  *
- *   69: class tx_gallery2_module1 extends t3lib_SCbase
+ *   71: class tx_gallery2_module1 extends t3lib_SCbase
  *
  *              SECTION: mainfunctions
- *   90:     function init()
- *  112:     function main()
- *  130:     function jumpToUrl(URL)
+ *   93:     function init()
+ *  115:     function main()
+ *  133:     function jumpToUrl(URL)
  *
  *              SECTION: output
- *  178:     function printContent()
+ *  189:     function printContent()
  *
  *              SECTION: galleryfunctions
- *  194:     function runGallery()
- *  262:     function initGallery()
+ *  205:     function runGallery()
+ *  273:     function initGallery()
+ *  327:     function getSessionData()
+ *  341:     function setSessionData($data)
+ *  352:     function clearSessionData()
  *
- * TOTAL FUNCTIONS: 6
+ * TOTAL FUNCTIONS: 9
  * (This index is automatically created/updated by the extension "extdeveval")
  *
  */
@@ -317,6 +319,11 @@ class tx_gallery2_module1 extends t3lib_SCbase {
 		$this->gallery = $ret;
 	}
 
+	/**
+	 * [Describe function...]
+	 *
+	 * @return	[type]		...
+	 */
 	function getSessionData(){
 		global $BE_USER;
 
@@ -325,12 +332,23 @@ class tx_gallery2_module1 extends t3lib_SCbase {
 		return $sesData;
 	}
 
+	/**
+	 * [Describe function...]
+	 *
+	 * @param	[type]		$data: ...
+	 * @return	[type]		...
+	 */
 	function setSessionData($data){
 		global $BE_USER;
 		$BE_USER->setAndSaveSessionData($this->sessionName,$data);
 		return;
 	}
 
+	/**
+	 * [Describe function...]
+	 *
+	 * @return	[type]		...
+	 */
 	function clearSessionData(){
 		$this->setSessionData(array());
 		return;

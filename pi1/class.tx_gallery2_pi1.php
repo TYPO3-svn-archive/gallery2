@@ -2,10 +2,10 @@
 /***************************************************************
 *  Copyright notice
 *
-*  (c) 2005 Philipp Mueller <pmueller@juhui.ch>
+*  (c) 2010 Philipp Mueller <philipp.mueller@xeiro.ch>
 *  All rights reserved
 *
-*  This script is part of the TYPO3 project. The TYPO3 project is
+*  This script is part of the Typo3 project. The Typo3 project is
 *  free software; you can redistribute it and/or modify
 *  it under the terms of the GNU General Public License as published by
 *  the Free Software Foundation; either version 2 of the License, or
@@ -22,15 +22,34 @@
 *  This copyright notice MUST APPEAR in all copies of the script!
 ***************************************************************/
 /**
- * Plugin 'Gallery2' for the 'gallery2' extension.
+ * Plugin 'tx_gallery2_pi1' for the 'gallery2' extension.
  *
- * @author	Philipp Mueller <pmueller@juhui.ch>
+ * @author	Philipp Mueller <philipp.mueller@xeiro.ch>
  * @package TYPO3
  * @subpackage gallery2
+ */
+/**
+ * [CLASS/FUNCTION INDEX of SCRIPT]
+ *
+ *
+ *
+ *   62: class tx_gallery2_pi1 extends tslib_pibase
+ *   80:     function main($content,$conf)
+ *  146:     function checkGPvar()
+ *  169:     function gallery()
+ *  203:     function getRecentAlbumsSelf()
+ *  255:     function getMoreRandoms($view)
+ *  318:     function getRandomBlock($blocks)
+ *  347:     function getRecentBlock($blocks)
+ *
+ *              SECTION: helpers
+ *  374:     function initGallery($urlId=0)
+ *  413:     function merge_conf($conf,$ffconf)
+ *
+ * TOTAL FUNCTIONS: 9
+ * (This index is automatically created/updated by the extension "extdeveval")
  *
  */
-#error_reporting (E_ALL);
-
 require_once(PATH_tslib.'class.tslib_pibase.php');
 require_once(t3lib_extMgm::extPath('gallery2').'lib/class.tx_gallery2_api.php');
 
@@ -115,12 +134,15 @@ class tx_gallery2_pi1 extends tslib_pibase {
 		return $out;
 	}
 
-	/**************************************************************************************************************************
+	/**
+	 * ***********************************************************************************************************************
 	 *
 	 * views
 	 *
-	 **************************************************************************************************************************/
-
+	 * *************************************************************************************************************************/
+	 *
+	 * @return	[type]		...
+	 */
 	function checkGPvar(){
 		$status = false;
 

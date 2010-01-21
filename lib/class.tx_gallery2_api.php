@@ -2,7 +2,7 @@
 /***************************************************************
 *  Copyright notice
 *
-*  (c) 2005 Philipp Mueller <pmueller@juhui.ch>
+*  (c) 2010 Philipp Mueller <philipp.mueller@xeiro.ch>
 *  All rights reserved
 *
 *  This script is part of the Typo3 project. The Typo3 project is
@@ -22,14 +22,34 @@
 *  This copyright notice MUST APPEAR in all copies of the script!
 ***************************************************************/
 /**
- * API for the 'gallery2' extension.
+ * class 'tx_gallery2_api' for the 'gallery2' extension.
  *
- * @author	Philipp Mueller <pmueller@juhui.ch>
- * @company Jud Grafik+Internet, www.juhui.ch
+ * @author	Philipp Mueller <philipp.mueller@xeiro.ch>
  * @package TYPO3
  * @subpackage gallery2
  */
-
+/**
+ * [CLASS/FUNCTION INDEX of SCRIPT]
+ *
+ *
+ *
+ *   55: class tx_gallery2_api
+ *
+ *              SECTION: filefunctions (obsolete)
+ *   70:     function makeDummyFiles()
+ *  116:     function mkdir_recursive($path)
+ *
+ *              SECTION: gallery2 functions
+ *  146:     function loadGallery($g2path='')
+ *  158:     function writeGalleryHeader($data,$g2moddata)
+ *
+ *              SECTION: helpers
+ *  205:     function setConf()
+ *
+ * TOTAL FUNCTIONS: 5
+ * (This index is automatically created/updated by the extension "extdeveval")
+ *
+ */
 class tx_gallery2_api {
 	var $extKey = 'gallery2';
 

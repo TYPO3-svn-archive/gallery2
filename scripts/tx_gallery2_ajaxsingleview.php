@@ -1,8 +1,46 @@
 <?php
+/***************************************************************
+*  Copyright notice
+*
+*  (c) 2010 Philipp Mueller <philipp.mueller@xeiro.ch>
+*  All rights reserved
+*
+*  This script is part of the Typo3 project. The Typo3 project is
+*  free software; you can redistribute it and/or modify
+*  it under the terms of the GNU General Public License as published by
+*  the Free Software Foundation; either version 2 of the License, or
+*  (at your option) any later version.
+*
+*  The GNU General Public License can be found at
+*  http://www.gnu.org/copyleft/gpl.html.
+*
+*  This script is distributed in the hope that it will be useful,
+*  but WITHOUT ANY WARRANTY; without even the implied warranty of
+*  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+*  GNU General Public License for more details.
+*
+*  This copyright notice MUST APPEAR in all copies of the script!
+***************************************************************/
 /**
- * Plugin 'Statistikdata' for the 'juhuiinserate' extension.
+ * Class 'ajaxSingleView' for the 'gallery2' extension.
  *
- * @author Philipp Mueller <pmueller@juhui.ch>
+ * @author	Philipp Mueller <philipp.mueller@xeiro.ch>
+ * @package TYPO3
+ * @subpackage gallery2
+ */
+/**
+ * [CLASS/FUNCTION INDEX of SCRIPT]
+ *
+ *
+ *
+ *   64: class tx_gallery2_ajaxSingleView
+ *   77:     function init($g2_itemId)
+ *   97:     function main()
+ *  154:     function printContent()
+ *
+ * TOTAL FUNCTIONS: 3
+ * (This index is automatically created/updated by the extension "extdeveval")
+ *
  */
 
 error_reporting (E_ALL);

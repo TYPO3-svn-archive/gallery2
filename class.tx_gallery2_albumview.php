@@ -2,7 +2,7 @@
 /***************************************************************
 *  Copyright notice
 *
-*  (c) 2005 Philipp Mueller <pmueller@juhui.ch>
+*  (c) 2010 Philipp Mueller <philipp.mueller@xeiro.ch>
 *  All rights reserved
 *
 *  This script is part of the Typo3 project. The Typo3 project is
@@ -24,8 +24,7 @@
 /**
  * Class 'albumview' for the 'gallery2' extension.
  *
- * @author	Philipp Mueller <pmueller@juhui.ch>
- * @company Jud Grafik+Internet, www.juhui.ch
+ * @author	Philipp Mueller <philipp.mueller@xeiro.ch>
  * @package TYPO3
  * @subpackage gallery2
  */
@@ -34,11 +33,11 @@
  *
  *
  *
- *   47: class tx_gallery2_albumview
- *   62:     function displayAlbumTree($PA,$fobj)
- *   88:     function getSelectorArray($albums,$prefix='')
- *  103:     function getSelectForm($albums)
- *  133:     function getAlbumArray($parentid=0)
+ *   46: class tx_gallery2_albumview
+ *   61:     function displayAlbumTree($PA,$fobj)
+ *   87:     function getSelectorArray($albums,$prefix='')
+ *  102:     function getSelectForm($albums)
+ *  132:     function getAlbumArray($parentid=0)
  *
  * TOTAL FUNCTIONS: 4
  * (This index is automatically created/updated by the extension "extdeveval")
@@ -46,8 +45,8 @@
  */
 class tx_gallery2_albumview {
 	var $g2table=array(	'album'			=> 'g2_AlbumItem',
-						'childentity'	=> 'g2_ChildEntity',
-						'item'			=> 'g2_Item');
+	'childentity'	=> 'g2_ChildEntity',
+	'item'			=> 'g2_Item');
 	var $selectorArray=array();
 	var $selectorPrefix = '';
 	var $TSConfig = array();
@@ -59,7 +58,7 @@ class tx_gallery2_albumview {
 	 * @param	array		$fobj: ..
 	 * @return	string		HTML-Code
 	 */
-	function displayAlbumTree($PA,$fobj){
+	function displayAlbumTree($PA,$fobj) {
 		global $BE_USER;
 
 		$this->PA = $PA;
@@ -85,7 +84,7 @@ class tx_gallery2_albumview {
 	 * @param	string		$prefix: Prefix for albumname
 	 * @return	void		Write a global variable
 	 */
-	function getSelectorArray($albums,$prefix=''){
+	function getSelectorArray($albums,$prefix='') {
 		foreach($albums as $k=>$v) {
 			$this->selectorArray[$k]=$prefix.'-&nbsp;'.$v['g_title'];
 			if($v['sub']) {
@@ -100,7 +99,7 @@ class tx_gallery2_albumview {
 	 * @param	array		$albums: Dataarray
 	 * @return	string		HTML-Code of Selectorbox
 	 */
-	function getSelectForm($albums){
+	function getSelectForm($albums) {
 		$config = $this->PA['fieldConf']['config'];
 		$c=0;
 		$sI=0;
@@ -130,7 +129,7 @@ class tx_gallery2_albumview {
 	 * @param	integer		$parentid: ParentId of album
 	 * @return	array		Alben
 	 */
-	function getAlbumArray($parentid=0){
+	function getAlbumArray($parentid=0) {
 		$select = 'a.g_id,i.g_title';
 		$from = '('.$this->g2table['album'].' a INNER JOIN '.$this->g2table['childentity'].' c ON a.g_id=c.g_id) INNER JOIN '.$this->g2table['item'].' i ON c.g_id=i.g_id';
 		$where = 'c.g_parentid='.$parentid;
@@ -151,7 +150,7 @@ class tx_gallery2_albumview {
 	}
 }
 
-if (defined('TYPO3_MODE') && $TYPO3_CONF_VARS[TYPO3_MODE]['XCLASS']['ext/gallery2/class.tx_gallery2_albumview.php'])    {
-    include_once($TYPO3_CONF_VARS[TYPO3_MODE]['XCLASS']['ext/gallery2/class.tx_gallery2_albumview.php']);
+if (defined('TYPO3_MODE') && $TYPO3_CONF_VARS[TYPO3_MODE]['XCLASS']['ext/gallery2/class.tx_gallery2_albumview.php']) {
+	include_once($TYPO3_CONF_VARS[TYPO3_MODE]['XCLASS']['ext/gallery2/class.tx_gallery2_albumview.php']);
 }
 ?>

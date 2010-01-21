@@ -1,6 +1,6 @@
 /**
- * Autor: Philipp Müller <pmueller@juhui.ch>
- * Company: Jud Informatik+Grafik GmbH, www.juhui.ch
+ * Autor: Philipp Müller <philipp.mueller@xeiro.ch>
+ * Company: xeiro ag, www.xeiro.ch
  */
 
 Links:

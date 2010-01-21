@@ -22,9 +22,9 @@
 *  This copyright notice MUST APPEAR in all copies of the script!
 ***************************************************************/
 /**
+ * class 'tx_gallery2_extembed' for the 'gallery2' extension.
  *
  * @author	Philipp Mueller <pmueller@juhui.ch>
- * @company Jud Grafik+Internet, www.juhui.ch
  * @package TYPO3
  * @subpackage gallery2
  */
